@@ -1,7 +1,7 @@
-import step01.Question10718;
+import step01.Question10171;
 
 public class Main {
     public static void main(String[] args) {
-        Question10718.printCheers();
+        Question10171.printCat();
     }
 }
