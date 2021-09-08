@@ -1,11 +1,5 @@
 package step01;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.security.InvalidParameterException;
-import java.util.StringTokenizer;
-
 /**
  * A-B
  *
@@ -19,21 +13,7 @@ import java.util.StringTokenizer;
  * https://www.acmicpc.net/problem/1001
  */
 public class Question1001 {
-    public static int subtract() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        String strA = st.nextToken();
-        String strB = st.nextToken();
-
-        int a = Integer.parseInt(strA);
-        int b = Integer.parseInt(strB);
-
-        // validation
-        if (a <= 0 || b >= 10) {
-            throw new InvalidParameterException();
-        }
-
+    public static int subtract(int a, int b) {
         return (a - b);
     }
 }
